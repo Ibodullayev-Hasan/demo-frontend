@@ -1,0 +1,90 @@
+/* Umumiy sozlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding-top: 12vh; 
+}
+
+/* Main qismlar */
+main {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 12vh; /* Header balandligi hisobga olinadi */
+}
+
+/* Header qismini sozlash */
+header {
+  width: 100%;
+  height: 12vh;
+  padding: 10px 20px;
+  background: rgba(106, 17, 203, 0.7); /* Yarim shaffof gradient */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 3px solid black;
+  box-shadow: none; /* Dastlab soyasiz */
+  transition: box-shadow 0.3s ease; /* Soya o‘zgarishlarini sekinlatish */
+  backdrop-filter: blur(5px); /* Orqa fonni xira qilish */
+}
+
+header.scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Scroll bo'lganda soya paydo bo'ladi */
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffcc00; /* Hover effekti */
+}
+
+/* Section qismlar */
+section {
+  margin: 20px auto;
+  padding: 20px;
+  width: 95%;
+  min-height: 60vh;
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+
+
+/* Footer qismini sozlash */
+footer {
+  text-align: center;
+  margin: 5px auto;
+  padding: 10px 0;
+  width: 100%;
+  height: 20vh;
+  background-color: #333;
+  color: white;
+  font-size: 0.9rem;
+}
