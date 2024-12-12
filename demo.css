@@ -24,7 +24,6 @@ header {
   width: 100%;
   height: 12vh;
   padding: 10px 20px;
-  background: rgba(106, 17, 203, 0.7); /* Yarim shaffof gradient */
   color: white;
   display: flex;
   align-items: center;
@@ -34,9 +33,10 @@ header {
   left: 0;
   z-index: 1000;
   border-bottom: 3px solid black;
-  box-shadow: none; /* Dastlab soyasiz */
-  transition: box-shadow 0.3s ease; /* Soya o‘zgarishlarini sekinlatish */
-  backdrop-filter: blur(5px); /* Orqa fonni xira qilish */
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+  backdrop-filter: blur(5px);
+  background: linear-gradient(135deg, rgba(203, 17, 17, 0.7), rgba(2, 2, 2, 0.885));
 }
 
 header.scrolled {
