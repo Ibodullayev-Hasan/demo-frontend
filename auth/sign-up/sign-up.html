@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./sign-up.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>
+      <span>Sign up</span>
+      <span class="title">GAPLASHAMIZ 😉</span>
+    </h1>
+
+    <form id="userForm">
+      <!-- full_name -->
+      <input
+        type="text"
+        id="full_name"
+        name="full_name"
+        placeholder="Ismingizni to'liq kiriting"
+        required
+      />
+
+      <!-- Emial -->
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Emailni kiriting"
+        required
+      />
+
+      <!-- Password -->
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Parolingizni kiriting"
+        required
+      />
+
+      <!-- Phone -->
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Tel: +998991234567"
+        required
+      />
+      <button id="btn" type="submit">Sign up</button>
+    </form>
+    <script src="./sign-up.js"></script>
+  </body>
+</html>

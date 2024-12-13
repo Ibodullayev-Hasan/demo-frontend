@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
-  padding-top: 12vh; 
+  padding-top: 12vh;
 }
 
 /* Main qismlar */
@@ -36,7 +36,11 @@ header {
   box-shadow: none;
   transition: box-shadow 0.3s ease;
   backdrop-filter: blur(5px);
-  background: linear-gradient(135deg, rgba(203, 17, 17, 0.7), rgba(2, 2, 2, 0.885));
+  background: linear-gradient(
+    135deg,
+    rgba(203, 17, 17, 0.7),
+    rgba(2, 2, 2, 0.885)
+  );
 }
 
 header.scrolled {
@@ -45,6 +49,15 @@ header.scrolled {
 
 header h1 {
   font-size: 1.5rem;
+}
+
+.title {
+  /* display: block; */
+  border: 4px white double;
+  border-radius: 10px;
+  user-select: none;
+  color: #66ccff;
+  text-decoration: none;
 }
 
 header nav {
@@ -74,8 +87,6 @@ section {
   border-radius: 8px;
   border: 2px solid black;
 }
-
-
 
 /* Footer qismini sozlash */
 footer {
